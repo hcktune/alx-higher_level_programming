@@ -7,4 +7,3 @@ elif number < 0:
     print(f"{numner} is negative")
 else:
     print(f"{numner} is zero")
-exit(1)

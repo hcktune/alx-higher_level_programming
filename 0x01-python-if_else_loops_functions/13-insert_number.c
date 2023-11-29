@@ -7,9 +7,9 @@
  * Return: the address of the new node, otherwise NULL
  */
 
-listint_t *insert_node(listint_s **head, int number)
+listint_t *insert_node(listint_t **head, int number)
 {
-	listint_s *node = *head, *tmp;
+	listint_t *node = *head, *tmp;
 
 	if (tmp == NULL || head == NULL)
 		return (NULL);
@@ -19,7 +19,7 @@ listint_t *insert_node(listint_s **head, int number)
 
 	if (node == NULL || node->n >= number)
 	{
-		tmp-next = node;
+		tmp->next = node;
 		*head = tmp;
 		return (tmp);
 	}

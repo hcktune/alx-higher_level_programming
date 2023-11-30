@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-import add_0 as add_func
-
-a = 1
-b = 2
-res = add_func.add(a, b)
-print(f"{a} + {b} = {res}")
+if __name__ == "__main__":
+    from add_0 import add as add_func 
+    a = 1
+    b = 2
+    res = add_func(a, b)
+    print(f"{a} + {b} = {res}")

@@ -7,5 +7,3 @@ def no_c(my_string):
         if char not in ('c', 'C'):
             new_string = new_string + char
     return (new_string) 
-res = no_c("Leeets goocCoooo")
-print(res)

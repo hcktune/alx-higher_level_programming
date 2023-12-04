@@ -2,7 +2,7 @@
 
 def new_in_list(my_list, idx, element):
     if  0 > idx > len(my_list) - 1:
-        return new_list[:]  # Should insist its a list by using [:]
+        return my_list[:]  # Should insist its a list by using [:]
     else:
         new_list = my_list[:]
         new_list[idx] = element

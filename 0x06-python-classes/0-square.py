@@ -3,6 +3,6 @@
 """ Empty class square that defines a square """
 
 
-class square:
+class Square:
     """ Empty class square that defines a square """
     pass

@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Defines a Rectangle class."""
 
-
 class Rectangle:
     """Represent a rectangle."""
 
@@ -28,8 +27,8 @@ class Rectangle:
             value (int): The new width of the Rectangle.
 
         Raises:
-            TypeError: If value is not an integer.
-            ValueError: If value is less than 0.
+            TypeError: If the value is not an integer.
+            ValueError: If the value is less than 0.
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -50,8 +49,8 @@ class Rectangle:
             value (int): The new height of the Rectangle.
 
         Raises:
-            TypeError: If value is not an integer.
-            ValueError: If value is less than 0.
+            TypeError: If the value is not an integer.
+            ValueError: If the value is less than 0.
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -64,17 +63,10 @@ class Rectangle:
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """
-        Returns the perimeter of the Rectangle.
-
-        If the width or height of the Rectangle is 0,
-        then the perimeter is 0. Otherwise, the perimeter is
-        the sum of the width and height multiplied by 2,
-        plus the width and height multiplied by 2 respectively.
-        """
+        """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
-            return 0
-        return (self.__width * 2) + (self.__height * 2)
+            return (0)
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
@@ -82,14 +74,19 @@ class Rectangle:
         Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
-            return ""
+            return ("")
 
         rect = []
         for i in range(self.__height):
             # add # to the list for each row
-            [rect.append("#") for j in range(self.__width)]
+            [rect.append('#') for j in range(self.__width)]
             # add a new line character if it's not the last row
             if i != self.__height - 1:
                 rect.append("\n")
-        # join all the characters in the list into a string
-        return "".join(rect)
+        return ("".join(rect))
+
+    def __repr__(self):
+        """Return the string representation of the Rectangle."""
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)

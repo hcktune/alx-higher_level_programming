@@ -72,5 +72,22 @@ class Rectangle:
             ValueError: If the width or height of the rectangel is zero
         """
         if self.__width == 0 or self.__height = 0:
-            raise ValueError("Cannot cal permter of zero area")
+            return 0
         return (self.__width * 2) + (self.__height * 2)
+
+    def __str__(self):
+        """ return the printable representation of rec
+            represent rect with '#'
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ""
+
+        rect = []
+
+        for i in range(self.__height):
+            # add '#' for each row
+            [rect.append('#') for j in range(self.__width)]
+            # add new line character
+            if i != self.__height - 1:
+                rect.append("\n")
+        return "".join(rect)

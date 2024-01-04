@@ -4,7 +4,7 @@
 """
 
 class Rectangle:
-    def __init__:
+    def __init__(self):
         """ Instanitation with optional witdth and height """
         pass
 

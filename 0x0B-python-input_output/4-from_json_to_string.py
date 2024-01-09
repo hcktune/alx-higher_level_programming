@@ -15,4 +15,4 @@ def from_json_string(my_str):
         Exception: when string cant be decoded
 
     """
-    return json.read(my_str)
+    return json.loads(my_str)

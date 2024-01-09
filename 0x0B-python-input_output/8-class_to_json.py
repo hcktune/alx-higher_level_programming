@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """ Module that returns the dictionary description with a simple
 data structure for a JSON serialization of an object
 """

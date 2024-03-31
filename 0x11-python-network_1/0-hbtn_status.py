@@ -1,5 +1,8 @@
-#!/usr/bin/python
-# request from url and display content of it
+#!/usr/bin/python3
+"""
+fetch <url>
+use urllib module
+"""
 import urllib.request  # Importe le module urllib.request
 
 url = 'https://alx-intranet.hbtn.io/status'  # Définit l'URL à récupérer

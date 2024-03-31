@@ -10,6 +10,6 @@ url = sys.argv[1]
 
 reponse = req.get(url)
 if reponse.status_code >= 400:
-	print("Error code:", response.status_code)
+	print("Error code: ", response.status_code)
 else:
 	print(reponse.text)
